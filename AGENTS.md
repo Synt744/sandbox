@@ -44,6 +44,17 @@
 - `scripts/` — preflight, backup-partitions, add-subscription, diagnose, uninstall.
 - `docs/` — 01 firmware, 02 сравнение, 03 настройка, 04 траблшутинг, 05 DPI-обход.
 
+## Где лежит репо
+
+Опубликовано в **`Synt744/sandbox`**, ветка `main`
+(<https://github.com/Synt744/sandbox>). Ссылки в README/install.sh указывают сюда.
+
+> Токен окружения — GitHub App installation token: он **не может создавать репозитории
+> и форки** («Resource not accessible by integration»), но имеет push в 8 существующих
+> репозиториев Synt744. Поэтому отдельный репозиторий под проект создать не удалось —
+> контент залит в `sandbox`. Если появится доступ к созданию репо, стоит перенести в
+> `Synt744/cudy-wr3000s-hiddify` и обновить ссылки (sed по `Synt744/sandbox`).
+
 ## Конвенции
 
 - Все скрипты — POSIX `sh` (busybox ash на OpenWrt), без bash-измов.
