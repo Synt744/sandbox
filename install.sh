@@ -15,11 +15,11 @@
 #   8. Включает и запускает службу homeproxy, перезапускает rpcd.
 #
 # Запуск (по SSH на роутере, от root):
-#   wget -O /tmp/install.sh https://raw.githubusercontent.com/Synt744/cudy-wr3000s-hiddify/main/install.sh
+#   wget -O /tmp/install.sh https://raw.githubusercontent.com/Synt744/sandbox/main/install.sh
 #   sh /tmp/install.sh
 #
 # Или одной строкой (ввод читается из /dev/tty, поэтому пайп остаётся интерактивным):
-#   wget -qO- https://raw.githubusercontent.com/Synt744/cudy-wr3000s-hiddify/main/install.sh | sh
+#   wget -qO- https://raw.githubusercontent.com/Synt744/sandbox/main/install.sh | sh
 #
 # Флаги:
 #   --core hiddify|singbox|none   какое ядро ставить (по умолчанию hiddify)

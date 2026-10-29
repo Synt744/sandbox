@@ -58,7 +58,7 @@
 
 ```sh
 ssh root@192.168.1.1
-wget -O /tmp/preflight.sh https://raw.githubusercontent.com/Synt744/cudy-wr3000s-hiddify/main/scripts/preflight.sh
+wget -O /tmp/preflight.sh https://raw.githubusercontent.com/Synt744/sandbox/main/scripts/preflight.sh
 sh /tmp/preflight.sh
 ```
 
@@ -68,7 +68,7 @@ sh /tmp/preflight.sh
 ### Шаг 3. Бэкап разделов (не пропускать!)
 
 ```sh
-wget -O /tmp/backup.sh https://raw.githubusercontent.com/Synt744/cudy-wr3000s-hiddify/main/scripts/backup-partitions.sh
+wget -O /tmp/backup.sh https://raw.githubusercontent.com/Synt744/sandbox/main/scripts/backup-partitions.sh
 sh /tmp/backup.sh
 ```
 
@@ -78,7 +78,7 @@ sh /tmp/backup.sh
 ### Шаг 4. Установка
 
 ```sh
-wget -O /tmp/install.sh https://raw.githubusercontent.com/Synt744/cudy-wr3000s-hiddify/main/install.sh
+wget -O /tmp/install.sh https://raw.githubusercontent.com/Synt744/sandbox/main/install.sh
 sh /tmp/install.sh
 ```
 
@@ -104,7 +104,7 @@ sh /tmp/install.sh --yes               # без вопросов
 Если GitHub у вас блокируется/тормозит, ставьте зеркало — переменной перед `sh`:
 
 ```sh
-wget -qO- https://raw.githubusercontent.com/Synt744/cudy-wr3000s-hiddify/main/install.sh | GH_MIRROR=https://my.mirror sh
+wget -qO- https://raw.githubusercontent.com/Synt744/sandbox/main/install.sh | GH_MIRROR=https://my.mirror sh
 ```
 
 ### Шаг 5. Настройка под Hiddify (LuCI)
@@ -121,14 +121,14 @@ wget -qO- https://raw.githubusercontent.com/Synt744/cudy-wr3000s-hiddify/main/in
 Из консоли подписку можно добавить так:
 
 ```sh
-wget -O /tmp/add-sub.sh https://raw.githubusercontent.com/Synt744/cudy-wr3000s-hiddify/main/scripts/add-subscription.sh
+wget -O /tmp/add-sub.sh https://raw.githubusercontent.com/Synt744/sandbox/main/scripts/add-subscription.sh
 sh /tmp/add-sub.sh "https://ваш-домен/sub/ТОКЕН" --auto --hour 2
 ```
 
 ### Шаг 6. Проверка
 
 ```sh
-wget -O /tmp/diag.sh https://raw.githubusercontent.com/Synt744/cudy-wr3000s-hiddify/main/scripts/diagnose.sh
+wget -O /tmp/diag.sh https://raw.githubusercontent.com/Synt744/sandbox/main/scripts/diagnose.sh
 sh /tmp/diag.sh
 ```
 
